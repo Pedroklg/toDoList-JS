@@ -1,0 +1,102 @@
+:root {
+    --color-dark1: #121213;
+    --color-dgray: #28292b;
+    --color-lgray: #5D5F63;
+    --color-darkBlue: #07090D;
+    --color-dark2: #07080A;
+    --color-gray: #3B3C3E;
+    --color-green: #67b856;
+    --color-green2: #447c39;
+    --color-white: #fff;
+}
+
+body {
+    font-family: 'Poppins';
+    color: var(--color-white);
+    background-color: var(--color-dark1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contentAddItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#inputNewTask, #btnNewTask {
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: .8rem;
+    width: 18rem;
+}
+
+#btnNewTask {
+    background-color: var(--color-lgray);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+    color: var(--color-white);
+}
+
+#btnNewTask:hover {
+    background-color: var(--color-gray);
+}
+
+#inputNewTask {
+    border-radius: 1rem;
+}
+
+#toDoList {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+}
+
+#toDoList li {
+    list-style-type: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btnOk {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    padding: .2rem .4rem;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#btnOk:hover {
+    background-color: var(--color-green2);
+}
+
+#toDoList li:hover {
+    background-color: var(--color-dgray);
+    border-radius: 1rem;
+    transition: .4s;
+    padding-left: 1rem;
+}
